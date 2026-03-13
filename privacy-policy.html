@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Refine Station</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #1f2937;
+      background: #f9fafb;
+      line-height: 1.7;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 24px;
+      color: #6366f1;
+      margin-bottom: 8px;
+    }
+    .last-updated {
+      font-size: 13px;
+      color: #9ca3af;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 18px;
+      color: #374151;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      font-size: 15px;
+      color: #4b5563;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 6px; }
+    a { color: #6366f1; }
+    .footer {
+      margin-top: 32px;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated: March 13, 2026</p>
+
+    <p>Refine Station ("the Extension") is a Chrome extension that helps you refine and improve text using the Google Gemini API. This privacy policy explains what data the Extension handles and how it is used.</p>
+
+    <h2>1. Data We Collect</h2>
+    <p><strong>We do not collect, store, or transmit any personal data to our own servers.</strong> The Extension does not have a backend server operated by us. All processing happens locally in your browser or via direct API calls from your browser to Google.</p>
+
+    <h2>2. Data Stored Locally</h2>
+    <p>The Extension stores the following data locally in your browser using Chrome's built-in storage (<code>chrome.storage.sync</code>):</p>
+    <ul>
+      <li><strong>Your Gemini API key</strong> — provided by you and used to authenticate requests to the Google Gemini API.</li>
+      <li><strong>Your preferences</strong> — tone, language, detail level, selected model, and enabled/disabled state.</li>
+    </ul>
+    <p>This data is synced across your Chrome browsers if you are signed into Chrome sync. It is never sent to us or any third party other than Google (as part of Chrome sync).</p>
+
+    <h2>3. Data Sent to Third Parties</h2>
+    <p>When you click "Refine" or "Writing Tips," the text you have typed in the active text field is sent directly from your browser to the <strong>Google Gemini API</strong> (<code>generativelanguage.googleapis.com</code>) along with your API key. This is necessary to provide the text refinement functionality.</p>
+    <p>We do not intercept, log, or store this data. Google's use of your data is governed by <a href="https://ai.google.dev/gemini-api/terms" target="_blank">Google's Gemini API Terms of Service</a> and <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+
+    <h2>4. Permissions</h2>
+    <p>The Extension requests the following browser permissions:</p>
+    <ul>
+      <li><strong>storage</strong> — to save your API key and preferences locally using Chrome's built-in storage.</li>
+    </ul>
+    <p>The Extension also uses a content script that runs on all websites to detect text input fields (textareas and contenteditable elements) and display the "Refine" and "Writing Tips" buttons. The content script only reads text from fields you explicitly choose to refine by clicking a button.</p>
+
+    <h2>5. Data Security</h2>
+    <p>Your API key is stored using Chrome's built-in storage mechanism. All communication with the Google Gemini API is conducted over HTTPS. We recommend that you do not share your API key with others.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>The Extension is not directed at children under 13 and does not knowingly collect personal information from children.</p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>We may update this privacy policy from time to time. Changes will be reflected on this page with an updated "Last updated" date.</p>
+
+    <h2>8. Contact</h2>
+    <p>If you have questions about this privacy policy, please contact us at <a href="https://redefine.b4it.to">redefine.b4it.to</a>.</p>
+
+    <div class="footer">
+      Refine Station &mdash; by Bogdan Radu
+    </div>
+  </div>
+</body>
+</html>
